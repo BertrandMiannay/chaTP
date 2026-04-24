@@ -9,7 +9,7 @@ class MistralAPI(BaseAPI):
 
     def __init__(self, model: str = DEFAULT_MODEL, timeout: float = 120.0):
         self.model = model
-        self.client = Mistral(api_key=os.environ["MISTRAL_API_KEY"], timeout=timeout)
+        self.client = Mistral(api_key=os.environ["MISTRAL_API_KEY"], timeout_ms=int(timeout * 1000))
 
     def send(self, messages: list[dict], system: str | None = None) -> APIResponse:
         all_messages = []
