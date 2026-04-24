@@ -6,7 +6,21 @@ Chat IA répondant à des questions sur les réglementations de plongée (FFESSM
 
 - **Brute force** : tous les PDFs extraits en texte et envoyés en contexte à chaque question
 - **Step-by-step** : résumés JSON générés au démarrage, un LLM filtre les documents pertinents, un second répond avec les seuls documents sélectionnés
-- **RAG** *(à venir)* : embeddings + recherche vectorielle
+- **RAG** : embeddings + recherche vectorielle (ChromaDB)
+
+## Résultats du benchmark
+
+Questions posées sur la réglementation FFESSM, scorées par un LLM-as-judge (1–5).
+
+| Approche     | Moy. tokens | Moy. latence | Score moyen |
+|--------------|-------------|--------------|-------------|
+| Brute Force  | 218 638      | 9 368 ms     | 4,3 / 5     |
+| Step by Step | 123 479      | 6 804 ms     | 4,3 / 5     |
+| RAG          | 4 558        | 3 036 ms     | 3,8 / 5     |
+
+**Observations :**
+- Brute Force et Step by Step atteignent la même qualité de réponse (4,3/5), mais Step by Step divise la consommation de tokens par ~1,8 et réduit la latence de 27 %.
+- RAG réduit drastiquement les tokens (×48 vs Brute Force) et la latence (×3), au prix d'une légère perte de qualité (−0,5 point).
 
 ## Prérequis
 
@@ -98,3 +112,8 @@ class MyApproach(BaseApproach):
 ```
 
 Puis l'ajouter au dict `APPROACHES` dans `ui/app.py`.
+
+## Todo
+
+- [ ] Évaluation manuelle des questions
+- [ ] Ajouter des questions plus transversales

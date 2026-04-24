@@ -1,13 +1,18 @@
 [
   {
-    "short_label": "Prérogatives N1",
-    "question": "Quelles sont les prérogatives du plongeur niveau 1 ?",
-    "expected_answer": "Le plongeur niveau 1 peut évoluer en milieu naturel jusqu'à 20 mètres, encadré par un guide de palanquée. Il peut plonger en PE20 (Plongée à l'Encadrement jusqu'à 20m)."
+    "short_label": "Profondeur max N1",
+    "question": "A quelle profondeur maximale un niveau 1 peut descendre ?",
+    "expected_answer": "Le plongeur niveau 1 peut évoluer en milieu naturel jusqu'à 20 mètres en encadré (PE20)"
   },
   {
     "short_label": "Profondeur autonome N2",
     "question": "À quelle profondeur maximale peut plonger un niveau 2 en autonomie ?",
-    "expected_answer": "Le plongeur niveau 2 peut plonger en autonomie jusqu'à 20 mètres (PA20) et jusqu'à 40 mètres encadré (PE40)."
+    "expected_answer": "Le plongeur niveau 2 peut plonger en autonomie jusqu'à 20 mètres (PA20)."
+  },
+  {
+    "short_label": "Profondeur encadré N2",
+    "question": "À quelle profondeur maximale peut plonger un niveau 2 en encadré ?",
+    "expected_answer": "Le plongeur niveau 2 peut plonger en encadré jusqu'à 40 mètres (PE40)."
   },
   {
     "short_label": "Conditions accès N3",
@@ -21,8 +26,8 @@
   },
   {
     "short_label": "Prérogatives GP N4",
-    "question": "Quelles sont les prérogatives du Guide de Palanquée niveau 4 ?",
-    "expected_answer": "Le Guide de Palanquée peut encadrer des plongeurs jusqu'à 60 mètres de profondeur. Il est responsable de la palanquée qu'il guide et peut encadrer des plongeurs de niveau 1 jusqu'à 20m."
+    "question": "A quelle profondeur maximale, un niveau 4 peut encadrer ?",
+    "expected_answer": "Le Guide de Palanquée peut encadrer des plongeurs jusqu'à 40 mètres de profondeur. Il est responsable de la palanquée qu'il guide"
   },
   {
     "short_label": "Âge minimum N1",
@@ -50,13 +55,8 @@
     "expected_answer": "L'équilibrage des oreilles consiste à compenser la pression qui augmente avec la profondeur afin d'éviter le barotraumatisme des oreilles. La manœuvre de Valsalva (pincer le nez et souffler doucement) est la technique la plus courante."
   },
   {
-    "short_label": "Profondeur N1 encadré",
-    "question": "Jusqu'à quelle profondeur un plongeur niveau 1 peut-il descendre avec un encadrant ?",
-    "expected_answer": "Un plongeur niveau 1 peut descendre jusqu'à 20 mètres de profondeur lorsqu'il est encadré par un guide de palanquée qualifié (PE20)."
-  },
-  {
-    "short_label": "Gilet stabilisateur N2",
-    "question": "Quel est le rôle du gilet stabilisateur (BCD) pendant une plongée niveau 2 ?",
+    "short_label": "Role gilet stabilisateur",
+    "question": "Quel est le rôle du gilet stabilisateur (BCD) ?",
     "expected_answer": "Le gilet stabilisateur permet de régler la flottabilité du plongeur. Il peut être gonflé pour monter ou dégonflé pour descendre. La maîtrise du gilet est essentielle pour évoluer sans toucher le fond et préserver l'environnement sous-marin."
   },
   {
@@ -75,9 +75,14 @@
     "expected_answer": "En cas d'essoufflement, il faut s'arrêter, se stabiliser, reprendre une respiration lente et profonde, signaler le problème à son binôme, et effectuer une remontée assistée et contrôlée vers la surface si la situation ne s'améliore pas."
   },
   {
-    "short_label": "Prérogatives N3",
-    "question": "Quelles sont les prérogatives d'un plongeur niveau 3 ?",
-    "expected_answer": "Le plongeur niveau 3 peut évoluer en autonomie jusqu'à 60 mètres (PA60) et est considéré comme plongeur expérimenté. Il peut encadrer des plongées en tant que guide de palanquée sur certains sites et peut diriger une palanquée de niveau 1 et 2."
+    "short_label": "Profondeur N3",
+    "question": "A quelle profondeur peut aller un plongeur niveau 3 au maximum ?",
+    "expected_answer": "Le plongeur niveau 3 peut évoluer en autonomie jusqu'à 60 mètres (PA60) et est considéré comme plongeur expérimenté."
+  },
+  {
+    "short_label": "Profondeur N3 hors DP",
+    "question": "A quelle profondeur peut aller un plongeur niveau 3 au maximum sans directeur de plongée ?",
+    "expected_answer": "Le plongeur niveau 3 peut évoluer à 40m en l'absence de directeur de plongée."
   },
   {
     "short_label": "Narcose azote",
@@ -127,6 +132,6 @@
   {
     "short_label": "Rôle guide palanquée N3",
     "question": "Quelles sont les responsabilités d'un plongeur niveau 3 lorsqu'il guide une palanquée ?",
-    "expected_answer": "En tant que guide de palanquée, le niveau 3 est responsable de la sécurité de sa palanquée. Il doit connaître le site, gérer les paramètres de plongée (profondeur, temps), surveiller tous les plongeurs, gérer les incidents éventuels et assurer la remontée en sécurité de l'ensemble du groupe."
+    "expected_answer": "Le niveau 3 ne peut pas encadrer de palanquée"
   }
 ]
