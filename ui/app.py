@@ -131,6 +131,25 @@ with tab_benchmark:
     else:
         results = st.session_state.benchmark_results
 
+        # Filtre par tags
+        all_tags = sorted(set(tag for q in runner.questions for tag in q.get("tags", [])))
+        if all_tags:
+            selected_tags = st.multiselect(
+                "Filtrer par tags",
+                options=all_tags,
+                default=all_tags,
+                key="tag_filter",
+            )
+            filtered_labels = {
+                q["short_label"] for q in runner.questions
+                if not q.get("tags") or any(t in selected_tags for t in q["tags"])
+            }
+        else:
+            filtered_labels = None  # aucun tag défini, on affiche tout
+
+        def show_label(label: str) -> bool:
+            return filtered_labels is None or label in filtered_labels
+
         # Résumé comparatif
         st.subheader("Résumé")
         ran_with_judge = st.session_state.get("use_judge", True)
@@ -147,7 +166,7 @@ with tab_benchmark:
         st.subheader("Comparaison par question")
         approach_names = list(results.keys())
         first_bench = next(iter(results.values()))
-        labels = [r.short_label for r in first_bench.results]
+        labels = [r.short_label for r in first_bench.results if show_label(r.short_label)]
         results_by_label = {
             name: {r.short_label: r for r in bench.results}
             for name, bench in results.items()
@@ -169,6 +188,8 @@ with tab_benchmark:
         for name, bench in results.items():
             with st.expander(f"Approche : {name}", expanded=True):
                 for r in bench.results:
+                    if not show_label(r.short_label):
+                        continue
                     st.markdown(f"**Q : {r.question}**")
                     col1, col2 = st.columns(2)
                     with col1:
