@@ -23,5 +23,110 @@
     "short_label": "Prérogatives GP N4",
     "question": "Quelles sont les prérogatives du Guide de Palanquée niveau 4 ?",
     "expected_answer": "Le Guide de Palanquée peut encadrer des plongeurs jusqu'à 60 mètres de profondeur. Il est responsable de la palanquée qu'il guide et peut encadrer des plongeurs de niveau 1 jusqu'à 20m."
+  },
+  {
+    "short_label": "Âge minimum N1",
+    "question": "Quel est l'âge minimum pour passer le niveau 1 de plongée ?",
+    "expected_answer": "L'âge minimum pour passer le niveau 1 est de 14 ans (avec autorisation parentale). À partir de 16 ans, l'autorisation parentale n'est plus nécessaire."
+  },
+  {
+    "short_label": "Équipement obligatoire N1",
+    "question": "Quel équipement de base doit maîtriser un plongeur niveau 1 ?",
+    "expected_answer": "Le plongeur niveau 1 doit maîtriser le masque, le tuba, les palmes, la combinaison, le gilet stabilisateur (BCD), le détendeur et la bouteille. Il doit savoir équilibrer son gilet et utiliser son équipement en sécurité."
+  },
+  {
+    "short_label": "Signe OK surface N1",
+    "question": "Quel est le signe à faire en surface pour signaler que tout va bien ?",
+    "expected_answer": "En surface, le signe 'tout va bien' consiste à lever un bras et à former un cercle avec le bras au-dessus de la tête, ou à agiter la main d'un côté à l'autre. Sous l'eau, on forme un O avec le pouce et l'index."
+  },
+  {
+    "short_label": "Remontée sécurité",
+    "question": "Comment doit s'effectuer une remontée sécurisée pour un plongeur niveau 1 ?",
+    "expected_answer": "La remontée doit s'effectuer à une vitesse maximale de 15 à 17 mètres par minute, en suivant le guide de palanquée, sans dépasser cette vitesse pour éviter tout accident de décompression."
+  },
+  {
+    "short_label": "Équilibrage oreilles",
+    "question": "Qu'est-ce que l'équilibrage des oreilles et pourquoi est-il indispensable ?",
+    "expected_answer": "L'équilibrage des oreilles consiste à compenser la pression qui augmente avec la profondeur afin d'éviter le barotraumatisme des oreilles. La manœuvre de Valsalva (pincer le nez et souffler doucement) est la technique la plus courante."
+  },
+  {
+    "short_label": "Profondeur N1 encadré",
+    "question": "Jusqu'à quelle profondeur un plongeur niveau 1 peut-il descendre avec un encadrant ?",
+    "expected_answer": "Un plongeur niveau 1 peut descendre jusqu'à 20 mètres de profondeur lorsqu'il est encadré par un guide de palanquée qualifié (PE20)."
+  },
+  {
+    "short_label": "Gilet stabilisateur N2",
+    "question": "Quel est le rôle du gilet stabilisateur (BCD) pendant une plongée niveau 2 ?",
+    "expected_answer": "Le gilet stabilisateur permet de régler la flottabilité du plongeur. Il peut être gonflé pour monter ou dégonflé pour descendre. La maîtrise du gilet est essentielle pour évoluer sans toucher le fond et préserver l'environnement sous-marin."
+  },
+  {
+    "short_label": "Palanquée autonome N2",
+    "question": "Combien de plongeurs minimum compose une palanquée autonome au niveau 2 ?",
+    "expected_answer": "Une palanquée autonome est composée d'au minimum 2 plongeurs niveau 2. Ils doivent rester en contact visuel permanent et être capables de s'assister mutuellement en cas de problème."
+  },
+  {
+    "short_label": "Essoufflement causes N2",
+    "question": "Quelles sont les principales causes d'essoufflement lors d'une plongée ?",
+    "expected_answer": "Les principales causes d'essoufflement sont : une respiration trop rapide et superficielle, un effort physique trop intense, le stress, une mauvaise flottabilité obligeant le plongeur à palmer trop fort, et une teneur en CO2 élevée dans la bouteille."
+  },
+  {
+    "short_label": "Conduite à tenir essoufflement",
+    "question": "Que doit faire un plongeur niveau 2 en cas d'essoufflement sous l'eau ?",
+    "expected_answer": "En cas d'essoufflement, il faut s'arrêter, se stabiliser, reprendre une respiration lente et profonde, signaler le problème à son binôme, et effectuer une remontée assistée et contrôlée vers la surface si la situation ne s'améliore pas."
+  },
+  {
+    "short_label": "Prérogatives N3",
+    "question": "Quelles sont les prérogatives d'un plongeur niveau 3 ?",
+    "expected_answer": "Le plongeur niveau 3 peut évoluer en autonomie jusqu'à 60 mètres (PA60) et est considéré comme plongeur expérimenté. Il peut encadrer des plongées en tant que guide de palanquée sur certains sites et peut diriger une palanquée de niveau 1 et 2."
+  },
+  {
+    "short_label": "Narcose azote",
+    "question": "Qu'est-ce que la narcose à l'azote et à partir de quelle profondeur peut-elle survenir ?",
+    "expected_answer": "La narcose à l'azote (ivresse des profondeurs) est un état similaire à l'ivresse provoqué par l'effet anesthésiant de l'azote sous haute pression. Elle peut apparaître dès 30 à 40 mètres de profondeur et ses effets varient selon les individus."
+  },
+  {
+    "short_label": "Accident décompression",
+    "question": "Qu'est-ce qu'un accident de décompression et comment le prévenir ?",
+    "expected_answer": "L'accident de décompression survient quand les bulles d'azote dissoutes dans les tissus se forment lors d'une remontée trop rapide. Pour le prévenir : respecter les vitesses de remontée (max 15-17 m/min), effectuer les paliers obligatoires, ne pas dépasser les temps de fond et bien s'hydrater."
+  },
+  {
+    "short_label": "Palier de sécurité",
+    "question": "En quoi consiste le palier de sécurité et à quelle profondeur s'effectue-t-il ?",
+    "expected_answer": "Le palier de sécurité est un arrêt de 3 minutes effectué à 3 mètres de profondeur lors de la remontée. Il permet d'éliminer davantage d'azote dissous dans les tissus et réduit le risque d'accident de décompression, même si aucun palier n'est obligatoire selon les tables."
+  },
+  {
+    "short_label": "Tables de plongée MN90",
+    "question": "À quoi servent les tables de plongée MN90 ?",
+    "expected_answer": "Les tables MN90 (Marine Nationale 1990) permettent de calculer les paliers de décompression obligatoires en fonction de la profondeur et du temps de fond. Elles permettent d'organiser la remontée de façon sécurisée pour éviter les accidents de décompression."
+  },
+  {
+    "short_label": "Froid et hypothermie",
+    "question": "Quels sont les risques du froid lors d'une plongée et comment s'en protéger ?",
+    "expected_answer": "Le froid provoque une hypothermie qui entraîne fatigue, crampes, perte de lucidité et dans les cas graves un arrêt cardiaque. On se protège avec une combinaison adaptée à la température de l'eau (humide, semi-étanche ou étanche selon les conditions)."
+  },
+  {
+    "short_label": "Signaux sous-marins N1",
+    "question": "Quels sont les principaux signes de communication sous-marine que doit connaître un niveau 1 ?",
+    "expected_answer": "Les signes essentiels sont : OK (cercle pouce-index), pas OK (main à plat qui se balance), monter (pouce levé), descendre (pouce vers le bas), me regarde (index vers les yeux), problème oreilles (main à l'oreille), et demi-tour (index en rotation)."
+  },
+  {
+    "short_label": "Détendeur partage N2",
+    "question": "Comment se partage un détendeur en cas de panne d'air entre deux plongeurs niveau 2 ?",
+    "expected_answer": "En cas de panne d'air, le plongeur en difficulté signale son problème (signe gorge tranchée). Son binôme lui donne son détendeur de secours (octopus, généralement jaune). Les deux plongeurs remontent ensuite ensemble de façon contrôlée, face à face, en se tenant par le bras."
+  },
+  {
+    "short_label": "Visibilité et courant N3",
+    "question": "Comment un plongeur niveau 3 doit-il gérer une plongée en courant ?",
+    "expected_answer": "En courant, il faut plonger face au courant à l'aller pour revenir facilement, se déplacer près du fond pour profiter de l'effet de sol, utiliser les reliefs pour s'abriter, et prévoir un couteau ou un parachute de palier. La palanquée doit rester groupée et le chef de palanquée doit anticiper la dérive."
+  },
+  {
+    "short_label": "Règles sécurité N1",
+    "question": "Quelles sont les règles de sécurité fondamentales que doit respecter un plongeur niveau 1 ?",
+    "expected_answer": "Les règles fondamentales sont : ne jamais plonger seul, toujours suivre le guide de palanquée, ne jamais remonter plus vite que ses bulles, équilibrer régulièrement les oreilles à la descente, signaler tout problème immédiatement à l'encadrant, et respecter les profondeurs autorisées."
+  },
+  {
+    "short_label": "Rôle guide palanquée N3",
+    "question": "Quelles sont les responsabilités d'un plongeur niveau 3 lorsqu'il guide une palanquée ?",
+    "expected_answer": "En tant que guide de palanquée, le niveau 3 est responsable de la sécurité de sa palanquée. Il doit connaître le site, gérer les paramètres de plongée (profondeur, temps), surveiller tous les plongeurs, gérer les incidents éventuels et assurer la remontée en sécurité de l'ensemble du groupe."
   }
 ]

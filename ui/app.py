@@ -6,6 +6,7 @@ import streamlit as st
 from api.mistral_api import MistralAPI
 from approaches.brute_force.approach import BruteForceApproach
 from approaches.step_by_step.approach import StepByStepApproach
+from approaches.rag.approach import RAGApproach
 from benchmark.judge import Judge
 from benchmark.runner import BenchmarkRunner
 
@@ -20,14 +21,15 @@ def load_resources():
     api = MistralAPI()
     brute_force = BruteForceApproach(api=api, pdf_dir=PDF_DIR)
     step_by_step = StepByStepApproach(api=api, pdf_dir=PDF_DIR)
+    rag = RAGApproach(api=api, pdf_dir=PDF_DIR)
     judge = Judge(api=api)
     runner = BenchmarkRunner()
-    return brute_force, step_by_step, judge, runner
+    return brute_force, step_by_step, rag, judge, runner
 
 
-brute_force, step_by_step, judge, runner = load_resources()
+brute_force, step_by_step, rag, judge, runner = load_resources()
 
-APPROACHES = {"Brute Force": brute_force, "Step by Step": step_by_step}
+APPROACHES = {"Brute Force": brute_force, "Step by Step": step_by_step, "RAG": rag}
 
 tab_chat, tab_benchmark = st.tabs(["Chat", "Benchmark"])
 
@@ -183,4 +185,7 @@ with tab_benchmark:
                         mcols[3].metric("Score", f"{r.judge_score} / 5")
                     if r.metadata.get("selected_documents"):
                         st.caption(f"Documents sélectionnés : {', '.join(r.metadata['selected_documents'])}")
+                    if r.metadata.get("retrieved_chunks"):
+                        docs_used = list(dict.fromkeys(c["doc_name"] for c in r.metadata["retrieved_chunks"]))
+                        st.caption(f"Chunks récupérés depuis : {', '.join(docs_used)}")
                     st.divider()

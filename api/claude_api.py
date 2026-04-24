@@ -6,9 +6,9 @@ from api.base import BaseAPI, APIResponse
 class ClaudeAPI(BaseAPI):
     DEFAULT_MODEL = "claude-sonnet-4-6"
 
-    def __init__(self, model: str = DEFAULT_MODEL):
+    def __init__(self, model: str = DEFAULT_MODEL, timeout: float = 120.0):
         self.model = model
-        self.client = anthropic.Anthropic()
+        self.client = anthropic.Anthropic(timeout=timeout)
 
     def send(self, messages: list[dict], system: str | None = None) -> APIResponse:
         kwargs = {
